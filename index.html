@@ -7,17 +7,28 @@
     <link rel="stylesheet" href="Styles/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="Script/dropzone.js"></script>
+    <script src="Script/script.js"></script>
     <title>FileUpload - FossFreaks</title>
 </head>
 
 <body>
+    <div class="logo">
+
+    </div>
     <div class="containerForHtml">
         <form action="" name="fileForm" method="post">
             <input type="file" name="file" id="file" class="inputfile">
             <label for="file" class="labelfor">	&uArr; Choose a file &uArr;</label>
         </form>
     </div>
-    
+    <div class="containerForDrag">
+        <form action="" method="post" class="dropzone" name="draguploadform" enctype="multipart/form-data">
+                <label for="file" id="uploader">Drag the file below</label><br>
+                <input type="file" name="file" id="dragupload" multiple/>
+                <input type="submit" value="Upload">
+        </form>
+    </div>
 </body>
 
 </html>
