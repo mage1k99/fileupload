@@ -19,15 +19,16 @@
 }
 .inputfile + .labelfor{
     font-size: 2em;
+    width: fit-content;
     font-weight: 700;
     font-family: sans-serif;
     color: black;
     vertical-align: middle;
+    /* position: relative;
+    top: 50%;
+    left: 50%; */
     background-color:  #b3d9ff;
     display: inline-block;
-    position: absolute;
-    left: 40%;
-    top : 40%;
 }
 .inputfile:focus + .labelfor,
 .inputfile + .labelfor:hover {
@@ -47,8 +48,8 @@
 }
 #dragupload{
     width: 100%;
-    height: 450px;
-    opacity: 1;
+    height: 400px;
+    opacity: 0;
     /* TODO : set opacity to 0 for hiding the button */
 }
 #uploader{
@@ -60,6 +61,17 @@
     color: black;
     vertical-align: middle;
 }
-#makevisble{
-    opacity: 1;
+.uploadButton{
+    -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.2s;
+  cursor: pointer;
+  padding: 16px 32px;
+  font-size: 16px;
+  margin: 4px 2px;
+  color: black;
+  border: 2px solid #b3d9ff;
+}
+.uploadButton:hover{
+    color: beige;
+    background-color: #3399FF;
 }
